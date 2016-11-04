@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<style>
+	#ny{
+		width:60%;
+		height:auto;
+		border-radius:10px;
+		border: solid 3px #009999;
+		margin:auto;
+		display:block;
+	}
+	#ky{
+		width:60%;
+		height:auto;
+		border-radius:10px;
+		border: solid 3px #009999;
+		margin:auto;
+		display:block;
+	}
+	#pagetwo{
+		text-align:center;
+	}
+	#pageone{
+		text-align:center;
+	}
+	
+</style>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Click on the link to see the slide effect.</p>
+	<img src="ny.jpg" id="ny"><br/>
+    <a href="#pagetwo" data-transition="slide">Slide to Page Two</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>New York City - USA</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Click on the link to go back. <b>Note</b>: fade is default.</p>
+	<img src="kyoto.jpg" id="ky"><br/>
+    <a href="#pageone" data-transition="flip">Go to Page One</a>
+	<a href="http://cnn.com" style="color:red;">CNNNN</a>
+	
+  </div>
+
+  <div data-role="footer">
+    <h1>Kyoto - Japan</h1>
+  </div>
+</div> 
+
+</body>
+</html>

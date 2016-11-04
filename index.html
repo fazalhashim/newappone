@@ -40,14 +40,15 @@
         alert("deviceready");
 	    $('#dready').html("The Device is Ready It seems....:)");
 	    var model = device.model;
-	    var devicePlatform = device.platform;
+	   /* var devicePlatform = device.platform;
 	    var deviceID = device.uuid;
 	    var deviceVersion = device.version;
 	    var deviceManufacturer = device.manufacturer;
 	    var isSim = device.isVirtual;
 	    var dserial = device.serial;
 var dinfo = "Model : "+model+"<br>Platform : "+devicePlatform+"<br> Device UUID: "+ deviceID+"<br>Version :"+ deviceVersion+"<br>Manufacturer :" +deviceManufacturer+"<br>Is Virtual :"+ isSim +"<br> Serial : "+dserial;
-	    
+	    */
+	    var dinfo = model;
 	    $('#deviceinformation').html(dinfo);
 	    
 	    

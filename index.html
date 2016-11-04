@@ -30,6 +30,16 @@
 	}
 	
 </style>
+	<script>
+		$(document).ready(function(){
+			document.addEventListener('deviceready',onDeviceReady,false);
+			
+			function onDeviceReady(){
+					var a = $("#dready");
+					a.html('THE DEVICE IS READY');
+			}
+		});
+	</script>
 </head>
 <body>
 
@@ -42,6 +52,7 @@
     <p>Click on the link to see the slide effect.</p>
 	<img src="ny.jpg" id="ny"><br/>
     <a href="#pagetwo" data-transition="slide">Slide to Page Two</a>
+	  <h1 id="dready"></h1>
   </div>
 
   <div data-role="footer">

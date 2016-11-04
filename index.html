@@ -39,6 +39,18 @@
     function onDeviceReady() {
         alert("deviceready");
 	    $('#dready').html("The Device is Ready It seems....:)");
+	    var model = device.model;
+	    var devicePlatform = device.platform;
+	    var deviceID = device.uuid;
+	    var deviceVersion = device.version;
+	    var deviceManufacturer = device.manufacturer;
+	    var isSim = device.isVirtual;
+	    var dserial = device.serial;
+var dinfo = "Model : "+model+"<br>Platform : "+devicePlatform+"<br> Device UUID: "+ deviceID+"<br>Version :"+ deviceVersion+"<br>Manufacturer :" +deviceManufacturer+"<br>Is Virtual :"+ isSim +"<br> Serial : "+dserial;
+	    
+	    $('#deviceinformation').html(dinfo);
+	    
+	    
     }
 		
 	</script>
@@ -55,6 +67,7 @@
 	<img src="ny.jpg" id="ny"><br/>
     <a href="#pagetwo" data-transition="slide">Slide to Page Two</a>
 	  <h1 id="dready"></h1>
+	  <p id="deviceinfomation" style="color:#009999;"> </p>
 	  
   </div>
 
